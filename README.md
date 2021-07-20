@@ -1,4 +1,5 @@
-# solidity-voting-contract-example
+# Solidity voting contract example
+
 Example of basic implementation for a votind contract developed in Solidiy and running over the Ethereum blockchain
 
 The voting contract has this functionalities:
