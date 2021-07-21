@@ -2,7 +2,7 @@
 
 Example of basic implementation for a votind contract developed in Solidiy and running over the Ethereum blockchain
 
-The voting contract has this functionalities:
+## The voting contract has this functionalities:
 
 - The voting has only 6 fixed options: “0” or “1” or “2” or “3” or “4” or “5”. Each nonzero option corresponds to 1 candidate (i.e., in total, there are 5 candidates). The zero
 option (“0”) denotes a blank vote and, thus, it cannot be associated with any candidate.
@@ -18,3 +18,15 @@ begin (write a function that would help the creator to mark an address as “aut
 (ii) When (i) holds, the percentage of blank votes should be less or equal to 15%. Otherwise, there is no winner.
 
 - The contract should not accept any funds sent to it. Any funds sent to the contract (e.g., by accident) should be returned to the sender.
+
+## Project structure and dependencies
+
+1. 'contracts': Holds three contracts with different complexity level, denoted with number prefix in file name.
+2. 'scripts': Holds two scripts to deploy a contract. It is explained below.
+3. 'tests': Contains one test file for 'Ballot' contract with unit tests in Solidity.
+
+SCRIPTS
+
+The 'scripts' folder contains example async/await scripts for deploying the 'Storage' contract.
+For the deployment of any other contract, 'contractName' and 'constructorArgs' should be updated (along with other code if required). 
+Scripts have full access to the web3.js and ethers.js libraries.
