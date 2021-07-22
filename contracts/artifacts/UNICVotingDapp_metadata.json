@@ -1,0 +1,205 @@
+{
+	"compiler": {
+		"version": "0.8.4+commit.c7e474f2"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "daysOpen",
+						"type": "uint8"
+					},
+					{
+						"internalType": "string",
+						"name": "candidateName1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "candidateName2",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "candidateName3",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "candidateName4",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "candidateName5",
+						"type": "string"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "fallback"
+			},
+			{
+				"inputs": [],
+				"name": "CountTotalVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_voter",
+						"type": "address"
+					}
+				],
+				"name": "authorizeVoter",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "authorizedVoters",
+				"outputs": [
+					{
+						"internalType": "enum UNICVotingDapp.VotingState",
+						"name": "voteState",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "vote",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "finishVoting",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getBalance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getWinner",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "winner_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "_candidateId",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {
+				"authorizeVoter(address)": {
+					"details": "Authorized the address provided to vote",
+					"params": {
+						"_voter": "Voter addrress to authorize"
+					}
+				},
+				"finishVoting()": {
+					"details": "Function for terminate and close the voting poll"
+				},
+				"getWinner()": {
+					"details": "Calculate the winner for the voting poll"
+				},
+				"vote(uint8)": {
+					"details": "vote function get the candidate Id - Must be a number in range (0,6)",
+					"params": {
+						"_candidateId": "index of the candidate"
+					}
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/unic_voting.sol": "UNICVotingDapp"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/unic_voting.sol": {
+			"keccak256": "0x7a5fc8168bfb242fff14ef213f5c1031154900f0aa0b569811b75baef0a9513b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://4478c0e37dbb9fd5620e16e91e9f858e37dcfad1ffb35e38b15fa0c310d49068",
+				"dweb:/ipfs/QmfQNxD2MnSuPJqS8GgC2SNV77RTsP6MmYHSn3J3A4wzgw"
+			]
+		}
+	},
+	"version": 1
+}
