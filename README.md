@@ -25,8 +25,15 @@ begin (write a function that would help the creator to mark an address as “aut
 2. 'scripts': Holds two scripts to deploy a contract. It is explained below.
 3. 'tests': Contains one test file for 'Ballot' contract with unit tests in Solidity.
 
-SCRIPTS
+## Using the contract
 
-The 'scripts' folder contains example async/await scripts for deploying the 'Storage' contract.
-For the deployment of any other contract, 'contractName' and 'constructorArgs' should be updated (along with other code if required). 
-Scripts have full access to the web3.js and ethers.js libraries.
+1. Deploying the contract
+
+![image](https://user-images.githubusercontent.com/33405407/126595661-d330ea35-b77b-4939-b07a-37c94c6f0840.png)
+
+2. Operate the contract
+
+![image](https://user-images.githubusercontent.com/33405407/126595786-92427345-0716-49a5-9a57-a10652bea0dd.png)
+
+
+
